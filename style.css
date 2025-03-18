@@ -1,0 +1,496 @@
+body{
+    font-family: Arial,sans-serif;
+    background-image: url('images/Stars.gif.gif');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     color: #ffffff;
+     margin: 0;
+     padding: 0;
+     text-align: center;  
+}
+
+header{
+    background: rgba(30, 30, 30, 0.8);
+       display: flex;
+       align-items: center;
+       padding: 15px 30px;
+       box-shadow:0 2px 5px rgba(0, 0, 0, 0.1) ;
+       
+}
+.branding{
+    display: flex;
+    align-items: center;
+    text-align: center;  
+}
+.logo{
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+    .company-name{
+        font-size: 1em;
+        font-family: 'Exo', sans-serif; 
+        font-weight: 300;
+        color: #a7a7a7;
+    }
+    .company-name:hover{
+        color: limegreen;
+
+    }
+    .no-underline{
+        text-decoration: none;
+    }
+    .content{
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #ccc;
+    }
+    .whatever{
+        font-size: 2.5em;
+        color: limegreen;
+        font-weight: bold;
+        animation: glow 4s infinite alternate;
+        text-shadow: 0 0 5px #002fff;
+    }
+    @keyframes glow{
+        0%{
+            text-shadow: 0 0 5px #002fff;
+        }
+        100%{
+            text-shadow: 0 0 10px #5f62fc;
+        }
+
+    }
+    .whatever-description{
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+section{
+    padding: 20px;
+}
+footer{
+    background: #1e1e1e;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.animate-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50px); 
+    animation: fadeInUp 2s ease-out forwards; 
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, main, footer, .services, .contact {
+    background-color: transparent;  
+    color: #fff;  
+}
+
+
+form input, form textarea {
+    background-color: rgba(255, 255, 255, 0.7);  
+    color: #000; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pricing-section {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    color: rgba(255, 255, 255, 0.9); /* Transparent text */
+}
+
+.pricing-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.pricing-option {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for pricing options */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: rgba(0, 0, 0, 0.8); /* Darker text inside the box */
+}
+
+.pricing-option h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.pricing-option ul {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.pricing-option li {
+    margin: 0.5rem 0;
+}
+
+.pricing-option p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#Welcome {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: #7178df;
+    opacity: 0;
+    transform: translateX(-100%); 
+    animation: slideInfromleft 10s forwards; 
+}
+
+
+@keyframes slideInfromleftS {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+.contact {
+    padding: 50px 20px;
+    background: transparent;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: limegreen;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.hero {
+    padding: 100px 20px;
+    background: transparent gray;
+    border-color: #0056b3;
+}
+
+.hero h1 span {
+    color:rgb(255, 255, 255);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: limegreen;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+.intro {
+    padding: 50px 20px;
+}
+
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slide-in { animation: slideIn 1s ease-out forwards; }
+.fade-in { animation: fadeIn 1.5s ease-in forwards; }
+
+.contact-button:hover{
+    transform: scale(1.1);
+
+}
+.logo{
+    width: 120px;
+    height: auto;
+    display: block;
+}
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #000; /* Adjust as needed */
+}
+
+.service {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service h3 {
+    color: limegreen; /* Matches your branding */
+    margin-top: 10px;
+}
+
+.service p {
+    color: white;
+    font-size: 14px;
+}
+.HomeButton{
+    text-decoration: none;
+    color: #002fff;
+    background-color: #fff;
+}
+.HomeButton:hover{
+    transform: scale(1.2);
+    color: #25D366;
+    background-color: #000;
+}
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.pricing-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+    transition: transform 0.3s;
+}
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+.price {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: limegreen;
+}
+.PricingHeader{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.back-button {
+    background: limegreen;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.back-button:hover {
+    background: white;
+    color: black;
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu li {
+    display: inline;
+}
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-menu a:hover {
+    color: limegreen;
+    }
+    .contact-form {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+        width: 50%;
+        margin: 40px auto;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+    }
+    .contact-form button {
+        background: limegreen;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .contact-form button:hover {
+        background: white;
+        color: black;
+    }
+    .contact-info {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .contact-info p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .contact-info i {
+        color: limegreen;
+        font-size: 20px;
+    }
+    .about-section {
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+        width: 70%;
+        margin: 40px auto;
+    }
+    .about-section h2 {
+        color: limegreen;
+    }
+    .about-section p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .samples-section {
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+        width: 80%;
+        margin: 40px auto;
+    }
+    .samples-section h2 {
+        color: limegreen;
+    }
+    .samples-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .sample-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    .sample-item:hover {
+        transform: scale(1.05);
+    }
+    .sample-item img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .sample-item h3 {
+        margin: 10px 0;
+        color: limegreen;
+    }
+    .NoteToSelf{
+        color: red;
+    }
+    @media (max-width: 768px) {
+        nav ul {
+            display: none;
+            flex-direction: column;
+        }
+        .menu-toggle {
+            display: block;
+        }
+        .hero {
+            height: 40vh;
+            font-size: 1.5rem;
+        }
+        .content {
+            padding: 20px;
+        }
+    }
+    
+    
